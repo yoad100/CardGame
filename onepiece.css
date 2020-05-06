@@ -76,7 +76,7 @@
 }
 #board::after {
     content: "";
-    background: url('C:/Users/User/Desktop/JavaScript/images/Game Pics/bgone.jpg');
+    background: url('./images/Game Pics/bgone.jpg');
     opacity: 0.6;
     top: 0;
     left: 0;
