@@ -1,0 +1,185 @@
+
+#board {
+    display: flex;
+    flex-direction: column;
+   margin: 0 auto;
+   width: 75%;
+   height: 600px;
+   border: 1px solid black;
+    
+}
+.boards{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 550px;
+    border: 3px solid black;
+    
+    
+}
+#board1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+#enemyPower{
+    position: absolute;
+    left:42.05%;
+    top: 0.1in;
+    border-radius: 5px;
+    background-size: cover;
+    background-image: url('https://motionarray.imgix.net/preview-93129-wiYuCcyEbO-low_0013.jpg?w=660&q=60&fit=max&auto=format');
+    color: white;
+    display: none;
+    font-family: 'Allerta Stencil';
+    font-size: 100%;
+    text-align: center;
+    height: 45px;
+    width:15.9%;
+    border: 2px solid black;
+}
+#yourPower{
+    position: absolute;
+    left: 42.05%;
+    top: 3.16in;
+    border-radius: 5px;
+    background-size: cover;
+    background-image: url('https://motionarray.imgix.net/preview-93129-wiYuCcyEbO-low_0013.jpg?w=660&q=60&fit=max&auto=format');
+    color: white;
+    display: none;
+    font-family: 'Allerta Stencil';
+    font-size: 100%;
+    text-align: center;
+    height: 45px;
+    width:15.9%;
+    border: 2px solid black;
+}
+.deck{
+    width: 100px;
+    height: 150px;
+    position: absolute;
+}
+.boards img:hover{
+    border: 2px outset black;
+}
+#board2{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+#board::after {
+    content: "";
+    background: url('C:/Users/User/Desktop/JavaScript/images/Game Pics/bgone.jpg');
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    width: 75%;
+    height: 600px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;   
+    margin: 0 auto;
+  }
+  #change-card-button{
+    display: flex;
+    height: 40px;
+    width: 300px;
+    justify-content: center;
+    display: none;
+    
+}
+#attack-button{
+    display: flex;
+    height: 40px;
+    width: 300px;
+    justify-content: center;
+    display: none;
+}
+#massage{
+    top: 2.2in;
+    position: absolute;
+    color: green;
+    align-self:center;
+    font-size: 70px;
+    display: none;
+}
+#lostHP1{
+    
+    position: absolute;
+    top: 3.1in;
+    left:7.75in;
+    color: red;
+    
+}
+#lostHP2{
+    
+    position: absolute;
+    top: 0.1in;
+    left:7.75in;
+    color: red;
+    
+}
+#Heroes{
+    display: flex;
+    border: 1px solid black;
+    width: 75%;
+    margin: 0 auto;
+    padding: 2px;
+    font-size: 25px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#enemyAct{
+    position: absolute;
+    top: 1in;
+    left: 2in;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red;
+    display: none;
+}
+#enemyAct2{
+    position: absolute;
+    top: 1in;
+    left: 2in;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    display:none;
+    
+}
+#yourLevel{
+    position: absolute;
+    top: 3.45in;
+    left:42.5%;
+    height:30px;
+    width:30px;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid black;
+    text-align: center;
+    opacity: 0.8;
+    display: none;
+}
+#enemyLevel{
+    position: absolute;
+    top: 0.36in;
+    left:42.5%;
+    height:30px;
+    width:30px;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid black;
+    text-align: center;
+    opacity: 0.8;
+    display: none;
+}
