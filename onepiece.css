@@ -1,4 +1,5 @@
 
+
 #board {
     display: flex;
     flex-direction: column;
@@ -37,7 +38,7 @@
     color: white;
     display: none;
     font-family: 'Allerta Stencil';
-    font-size: 100%;
+    font-size: 1.5vw;
     text-align: center;
     height: 45px;
     width:15.9%;
@@ -53,7 +54,7 @@
     color: white;
     display: none;
     font-family: 'Allerta Stencil';
-    font-size: 100%;
+    font-size: 1.5vw;
     text-align: center;
     height: 45px;
     width:15.9%;
@@ -183,3 +184,51 @@
     opacity: 0.8;
     display: none;
 }
+@media  (max-width: 600px) {
+    #board{
+        width:100% !important;
+    }
+    #board::after{
+        width: 100% !important;
+    }
+    #attack-button{
+        align-items: flex-start;
+        width: 40%;
+    }
+    #attack-button button{
+        width:100% !important;
+    }
+    #change-card-button{
+        align-items: flex-start;
+        width: 120px;
+    }
+    #opCard,#yourPower, #opCard2,#enemyPower{
+        position: absolute; 
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+        width: 40% !important;
+        font-size: 3.8vw;
+    }
+    #board2{
+        justify-content: space-between;
+    }
+    .deck{
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+    #yourLevel,#enemyLevel{
+        position: absolute; 
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+        width: 8% !important;
+    }
+    #massage{
+        opacity: 0;
+    }
+  }
