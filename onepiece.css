@@ -1,4 +1,8 @@
-
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
 #board {
     display: flex;
@@ -92,20 +96,31 @@
     margin: 0 auto;
   }
   #change-card-button{
-    display: flex;
-    height: 40px;
-    width: 300px;
-    justify-content: center;
+    height: 100px;
+    width: 50%;
     display: none;
-    
 }
 #attack-button{
-    display: flex;
-    height: 40px;
-    width: 300px;
-    justify-content: center;
-    display: none;
+    height: 100px;
+    width: 50%;
+	display: none;
 }
+
+button{
+	width:100px;
+}
+#attack-button button{
+	margin-left: auto;
+}
+.button_img{
+	width: 100%;
+}
+
+.damages{
+	font-size: 50px;
+	font-family: fantasy;	
+}
+
 #massage{
     top: 2.2in;
     position: absolute;
@@ -115,20 +130,16 @@
     display: none;
 }
 #lostHP1{
-    
     position: absolute;
     top: 3.1in;
     left:7.75in;
     color: red;
-    
 }
 #lostHP2{
-    
     position: absolute;
     top: 0.1in;
     left:7.75in;
-    color: red;
-    
+	color: red;
 }
 #Heroes{
     display: flex;
@@ -191,24 +202,13 @@
     #board::after{
         width: 100% !important;
     }
-    #attack-button{
-        align-items: flex-start;
-        width: 40%;
-    }
-    #attack-button button{
-        width:100% !important;
-    }
-    #change-card-button{
-        align-items: flex-start;
-        width: 120px;
-    }
     #opCard,#yourPower, #opCard2,#enemyPower{
         position: absolute; 
         left: 0; 
         right: 0; 
         margin-left: auto; 
         margin-right: auto; 
-        width: 40% !important;
+        width: 50% !important;
         font-size: 3.8vw;
     }
     #board2{
@@ -230,5 +230,19 @@
     }
     #massage{
         opacity: 0;
-    }
+	}
+	button{
+		font-size: 5px !important;
+		width: 50px;
+		height: 50px;
+	}
+	#attack-button,#change-card-button{
+		height: 50px;
+	}
+	#enemyAct,#enemyAct2{
+		font-size: 0px;
+	}
+	#lostHP1,#lostHP2{
+		left: 0in;
+	}
   }
